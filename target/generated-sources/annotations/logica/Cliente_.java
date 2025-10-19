@@ -1,0 +1,17 @@
+package logica;
+
+import javax.annotation.processing.Generated;
+import javax.persistence.metamodel.ListAttribute;
+import javax.persistence.metamodel.SingularAttribute;
+import javax.persistence.metamodel.StaticMetamodel;
+import logica.venta;
+
+@Generated(value="org.eclipse.persistence.internal.jpa.modelgen.CanonicalModelProcessor", date="2025-10-19T16:34:14", comments="EclipseLink-2.7.10.v20211216-rNA")
+@StaticMetamodel(Cliente.class)
+public class Cliente_ extends Persona_ {
+
+    public static volatile ListAttribute<Cliente, venta> venta;
+    public static volatile SingularAttribute<Cliente, String> Email;
+    public static volatile SingularAttribute<Cliente, String> telefono;
+
+}
