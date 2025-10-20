@@ -1,8 +1,6 @@
 package com.mycompany.proyecto_c4;
 
 import interfaz.login;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
@@ -17,8 +15,8 @@ public class Proyecto_C4 {
 
         SwingUtilities.invokeLater(() -> {
             try {
-                // Cambiar el estilo de apariencia a Windows
-                UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+                //estilo segun el sistema
+                UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 
                 // Crear e inicializar tu JFrame
                 login login = new login();
